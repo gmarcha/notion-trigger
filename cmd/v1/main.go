@@ -6,7 +6,6 @@ import (
 	"time"
 
 	"github.com/gmarcha/notion-trigger/internal/v1/client"
-	_ "github.com/gmarcha/notion-trigger/internal/v1/env"
 	"github.com/gmarcha/notion-trigger/internal/v1/log"
 	"github.com/gmarcha/notion-trigger/internal/v1/poll"
 )
@@ -29,8 +28,8 @@ func main() {
 			poll.LastPollTime = t
 		}
 	}()
-	log.Logger.Info("Trigger ready to poll")
+	log.Logger.Info("Notion-trigger ready to poll")
 	<-sc
 	ticker.Stop()
-	log.Logger.Info("Trigger exited")
+	log.Logger.Info("Notion-trigger exited")
 }
