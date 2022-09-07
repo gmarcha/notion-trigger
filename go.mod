@@ -7,7 +7,6 @@ require (
 	github.com/go-openapi/runtime v0.24.1
 	github.com/go-openapi/strfmt v0.21.3
 	github.com/go-openapi/swag v0.22.3
-	github.com/joho/godotenv v1.4.0
 	github.com/jomei/notionapi v1.9.0
 	go.uber.org/zap v1.23.0
 )
