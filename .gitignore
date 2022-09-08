@@ -16,3 +16,4 @@
 
 .env
 bin/
+log.json
