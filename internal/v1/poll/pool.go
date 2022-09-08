@@ -25,7 +25,7 @@ func Pool(notion *notionapi.Client, api *client.Notion) error {
 	}
 	log.Logger.Debug("Notion API event database query")
 
-	var eg *errgroup.Group
+	var eg errgroup.Group
 	for _, page := range resp.Results {
 		currentPage := page
 		eg.Go(func() error {
